@@ -28,6 +28,8 @@ Most governance systems degrade because they:
 
 This document exists to explain why **silence and stability** are intentional here.
 
+> **Growth is not adding more — it’s surviving new pressure without lying.**
+
 ---
 
 ## Principle: failure-driven change
