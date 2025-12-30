@@ -130,6 +130,21 @@ And:
 
 ---
 
+## Lock declaration
+
+This audit attestation is **final and locked**.
+
+It:
+- must not be updated, refreshed, or re-issued
+- must not be versioned as a renewal
+- must not be treated as expiring
+- must not be reused as proof for any other system
+
+A new attestation may be created **only** if a new audit occurs due to
+demonstrated misuse or real-world failure.
+
+---
+
 ## Final declaration
 
 > **The reference constitution is complete.  
