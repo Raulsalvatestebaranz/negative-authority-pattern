@@ -1,0 +1,112 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.org/negative-authority/constitution.index.schema.json",
+    "title": "Sociotechnical Constitution — Negative Authority Index",
+    "description": "A non-authoritative, navigational index for locating and classifying documents in a Sociotechnical Constitution. This schema cannot express legitimacy, compliance, permission, approval, readiness, or satisfaction. It exists only to help humans and machines find the correct source of authority.",
+    "type": "object",
+    "properties": {
+        "nonAuthoritative": {
+            "type": "boolean",
+            "const": true,
+            "description": "This index has no authority. It must never be used to justify action, enforcement, deployment, gating, or claims of compliance."
+        },
+        "pattern": {
+            "type": "string",
+            "const": "Negative Authority Pattern",
+            "description": "Descriptive identifier only. This field does not grant or imply legitimacy."
+        },
+        "documents": {
+            "type": "array",
+            "minItems": 1,
+            "description": "List of documents in the constitution. Presence, absence, or ordering does not imply validity, compliance, permission, or approval.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "path": {
+                        "type": "string",
+                        "description": "Repository-relative path to the document."
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "Human-readable document title. Informational only."
+                    },
+                    "summary": {
+                        "type": "string",
+                        "description": "Optional human-readable summary. Must not be interpreted as guidance or policy."
+                    },
+                    "documentType": {
+                        "type": "string",
+                        "enum": [
+                            "legitimacy",
+                            "constitution",
+                            "governance",
+                            "interpretive",
+                            "guardrail",
+                            "exception",
+                            "decision",
+                            "template",
+                            "operation"
+                        ],
+                        "description": "Classification only. This does not grant authority or priority."
+                    },
+                    "authorityLevel": {
+                        "type": "string",
+                        "enum": [
+                            "negative",
+                            "absolute",
+                            "derived",
+                            "interpretive",
+                            "historical",
+                            "none"
+                        ],
+                        "description": "Relative authority description for navigation and citation hygiene only. This field must not be used to enable decisions."
+                    },
+                    "scope": {
+                        "type": "string",
+                        "description": "Human-readable scope description. Not machine-enforceable."
+                    },
+                    "referencesInvariants": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "References to constitutional invariants by identifier only. Referential; implies no compliance or satisfaction."
+                    },
+                    "tags": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "Optional free-form tags to support navigation and search."
+                    },
+                    "owner": {
+                        "type": "string",
+                        "description": "Human-readable owner or steward of the document. Informational only."
+                    },
+                    "lastModified": {
+                        "type": "string",
+                        "description": "Last modification date (ISO 8601 recommended). Informational only."
+                    },
+                    "notes": {
+                        "type": "string",
+                        "description": "Optional human notes. Must not be interpreted as rules, policy, or guidance."
+                    }
+                },
+                "required": [
+                    "path",
+                    "documentType",
+                    "authorityLevel"
+                ],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "nonAuthoritative",
+        "pattern",
+        "documents"
+    ],
+    "additionalProperties": false
+}
