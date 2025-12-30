@@ -49,6 +49,16 @@ NEGATIVE AUTHORITY PATTERN
 ├── README.md
 │   └── Pattern-level description (this file)
 │
+├── NEGATIVE_AUTHORITY_DOCTRINE.md
+│   └── Meta-constraint on authority, certification, and misuse
+│
+├── OBSERVANCE_AND_CONSISTENCY.md
+│   └── Explains how stability is preserved without review cycles or renewal
+│
+├── audits/
+│   ├── TEMPLATE_AUDIT_ATTESTATION.md
+│   └── AUDIT_ATTESTATION.md
+│
 └── reference-constitution/
     ├── LEGITIMACY.md
     │   └── Level −1: refusal / permission-to-exist
@@ -89,6 +99,23 @@ In other words: **steal the shape, not the halo.**
 
 ---
 
+## How consistency is preserved over time
+
+This repository does **not** stay correct by being periodically reviewed, renewed, or re-approved.
+
+It stays correct by:
+
+* refusing certification
+* avoiding artifact-based proof
+* detecting misuse instead of chasing freshness
+* changing **only** in response to demonstrated failure
+
+There is **no expiration**, **no review cycle**, and **no update cadence**.
+
+Details are documented in `OBSERVANCE_AND_CONSISTENCY.md`.
+
+---
+
 ## Where authority lives (inside the reference)
 
 1. `reference-constitution/LEGITIMACY.md`
@@ -120,6 +147,5 @@ It reflects **misuse resistance and authority containment**, not correctness or 
 * Remaining risk is social misuse under pressure, which cannot be eliminated by text alone.
 
 <!-- END FILE: NEGATIVE AUTHORITY PATTERN / README.md -->
-
 
 

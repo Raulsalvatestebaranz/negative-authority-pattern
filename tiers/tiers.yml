@@ -1,0 +1,24 @@
+tier_1:
+  - NEGATIVE_AUTHORITY_DOCTRINE.md
+  - reference-constitution/LEGITIMACY.md
+  - reference-constitution/CONSTITUTION.md
+  - reference-constitution/GOVERNANCE.md
+
+tier_2:
+  - reference-constitution/guardrails/GUARDRAIL_CLEAR_OWNERSHIP.md
+  - reference-constitution/guardrails/GUARDRAIL_REVERSIBILITY.md
+  - reference-constitution/guardrails/GUARDRAIL_VISIBILITY.md
+
+tier_3:
+  - OBSERVANCE_AND_CONSISTENCY.md
+  - audits/AUDIT_ATTESTATION.md
+  - reference-constitution/EXCEPTIONS.md
+  - reference-constitution/decisions/ADR-0001-Single-Constitution.md
+  - reference-constitution/BOT_QUERY_CONTRACT.md
+  - reference-constitution/SCHEMA_RULES.md
+  - reference-constitution/constitution.index.schema.json
+  - reference-constitution/CLARIS.md
+  - reference-constitution/CLARIS_VOCABULARY.md
+  - reference-constitution/CLARIS_COMMON_MISUNDERSTANDINGS.md
+  - reference-constitution/CLARIS_CONFUSION_LOG.md
+  - reference-constitution/CLARIS_DRIFT_LOG.md
