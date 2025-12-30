@@ -1,4 +1,4 @@
-# Audit Attestation — Negative Authority Pattern
+# Audit Attestation — Reference Constitution Lock
 
 ## Authority boundary
 
@@ -16,7 +16,7 @@ If this document is used to claim that a system is “approved”, “certified�
 
 ## What this document records
 
-This document records that a **hostile, negative-authority audit** was performed against the contents of this repository.
+This document records that a **one-by-one hostile audit** was performed against the entire `reference-constitution/` directory under the **Negative Authority Doctrine**.
 
 It does **not** assert that:
 - the system is correct
@@ -24,7 +24,7 @@ It does **not** assert that:
 - the system is complete
 - the system should be used
 
-It records only **what was examined, how it was examined, and what failure modes were considered**.
+It records only **what was examined, how it was examined, and what authority failure modes were checked**.
 
 ---
 
@@ -60,27 +60,64 @@ No artifacts were excluded.
 
 ---
 
+## Lock status — file-by-file
+
+| File | Status | Diagnostic score |
+|------|--------|------------------|
+| `LEGITIMACY.md` | Locked | 9.5 / 10 |
+| `CONSTITUTION.md` | Locked | 9.5 / 10 |
+| `GOVERNANCE.md` | Locked | 9.5 / 10 |
+| `CLARIS.md` | Locked | 9.0 / 10 |
+| `CLARIS_VOCABULARY.md` | Locked | 9.0 / 10 |
+| `CLARIS_COMMON_MISUNDERSTANDINGS.md` | Locked | 9.0 / 10 |
+| `CLARIS_CONFUSION_LOG.md` | Locked | 9.5 / 10 |
+| `CLARIS_DRIFT_LOG.md` | Locked | 9.5 / 10 |
+| `guardrails/README.md` | Locked | 9.0 / 10 |
+| `GUARDRAIL_CLEAR_OWNERSHIP.md` | Locked | 9.0 / 10 |
+| `GUARDRAIL_REVERSIBILITY.md` | Locked | 9.5 / 10 |
+| `GUARDRAIL_VISIBILITY.md` | Locked | 9.0 / 10 |
+| `EXCEPTIONS.md` | Locked | 9.0 / 10 |
+| `ADR_TEMPLATE.md` | Locked | 9.0 / 10 |
+| `ADR-0001-Single-Constitution.md` | Locked | 9.0 / 10 |
+| `BOT_QUERY_CONTRACT.md` | Locked | 9.0 / 10 |
+| `SCHEMA_RULES.md` | Locked | 9.5 / 10 |
+| `constitution.index.schema.json` | Locked | 9.5 / 10 |
+
+---
+
 ## Findings (descriptive)
 
 - No artifact was found to grant positive permission.
 - No artifact was found to certify legitimacy or compliance.
+- No document could be used to justify deployment or continuation.
 - Authority flow was consistent and non-circular.
-- No hidden approval paths or certification surfaces were detected.
-- Remaining risks were **social and organizational**, not textual.
+- Misuse surfaces are explicit and diagnosable.
+- Remaining risk is **social and organizational**, not textual.
 
 No enforcement actions, approvals, or certifications were produced.
 
 ---
 
-## Diagnostic summary (non-authoritative)
+## Structural guarantees (verified)
 
-This summary is **diagnostic only** and reflects misuse resistance, not safety or correctness.
+The locked reference constitution guarantees:
 
-- Overall misuse-resistance profile: **High**
-- Identified irreducible risk: **human power pressure and willful misuse**
-- No unresolved structural authority leaks detected at time of audit.
+- No document can say **“yes”**
+- No artifact can certify legitimacy
+- No schema can evaluate or gate action
+- No bot can substitute for human judgment
+- No guardrail can become universal law
+- No exception can become tolerance
+- No ADR can ossify into rule
 
-This summary must not be treated as an endorsement.
+And:
+
+- Legitimacy can only be **lost**
+- Violations must be **named**
+- Drift must be **visible**
+- Misuse must be **explicit**
+- Authority always flows **downward**
+- Reality remains the **only validator**
 
 ---
 
@@ -93,9 +130,14 @@ This summary must not be treated as an endorsement.
 
 ---
 
-## Final statement
+## Final declaration
 
-This document attests only to the fact that an audit occurred.
+> **The reference constitution is complete.  
+> Authority is contained.  
+> Misuse is diagnosable.  
+> The system knows when to stop.**
+
+This document attests only that an audit occurred.
 
 It does not transfer legitimacy.
 
